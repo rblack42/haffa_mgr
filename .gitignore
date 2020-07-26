@@ -1,0 +1,12 @@
+# Vim
+*.swp
+*~
+
+# Python
+__pycache__
+_venv
+*.py[cod]
+
+# Sphinx
+_build
+
