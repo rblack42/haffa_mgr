@@ -1,7 +1,12 @@
 ---
-- hosts: vagrant
-  become: True
-  roles:
-    - apt:
-    - nginx
+- hosts: all
+  become: yes
+  tasks:
+    - name: Start NTP
+      apt: pkg=ntp state=latest
+      notify:
+        - restart ntp
+  handlers:
+    - name: restart ntp
+      service: name=ntpd state=restarted
 

@@ -6,6 +6,7 @@ HAFFA documentation contents
     :maxdepth: 2
 
     introduction/index
+    usage/index
 
     zbibliography
 
