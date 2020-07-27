@@ -1,0 +1,7 @@
+---
+- hosts: vagrant
+  become: True
+  roles:
+    - apt:
+    - nginx
+
