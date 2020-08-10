@@ -12,6 +12,7 @@
 __pycache__
 _venv
 *.py[cod]
+*.sock
 
 # Sphinx
 _build

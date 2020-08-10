@@ -1,0 +1,19 @@
+[0;1;32m●[0m haffa-mgr.service
+     Loaded: loaded (/etc/systemd/system/haffa-mgr.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Mon 2020-07-27 02:09:26 UTC; 10s ago
+   Main PID: 5987 (gunicorn)
+      Tasks: 4 (limit: 2344)
+     Memory: 51.4M
+     CGroup: /system.slice/haffa-mgr.service
+             ├─5987 /home/rblack/haffa_mgr/_venv/bin/python3 /home/rblack/haffa_mgr/_venv/bin/gunicorn --workers 3 --bind unix:haffa_mgr.sock -m 007 wsgi:app
+             ├─6000 /home/rblack/haffa_mgr/_venv/bin/python3 /home/rblack/haffa_mgr/_venv/bin/gunicorn --workers 3 --bind unix:haffa_mgr.sock -m 007 wsgi:app
+             ├─6001 /home/rblack/haffa_mgr/_venv/bin/python3 /home/rblack/haffa_mgr/_venv/bin/gunicorn --workers 3 --bind unix:haffa_mgr.sock -m 007 wsgi:app
+             └─6002 /home/rblack/haffa_mgr/_venv/bin/python3 /home/rblack/haffa_mgr/_venv/bin/gunicorn --workers 3 --bind unix:haffa_mgr.sock -m 007 wsgi:app
+
+Jul 27 02:09:26 pylit systemd[1]: Started haffa-mgr.service.
+Jul 27 02:09:26 pylit gunicorn[5987]: [2020-07-27 02:09:26 +0000] [5987] [INFO] Starting gunicorn 20.0.4
+Jul 27 02:09:26 pylit gunicorn[5987]: [2020-07-27 02:09:26 +0000] [5987] [INFO] Listening at: unix:haffa_mgr.sock (5987)
+Jul 27 02:09:26 pylit gunicorn[5987]: [2020-07-27 02:09:26 +0000] [5987] [INFO] Using worker: sync
+Jul 27 02:09:26 pylit gunicorn[6000]: [2020-07-27 02:09:26 +0000] [6000] [INFO] Booting worker with pid: 6000
+Jul 27 02:09:26 pylit gunicorn[6001]: [2020-07-27 02:09:26 +0000] [6001] [INFO] Booting worker with pid: 6001
+Jul 27 02:09:26 pylit gunicorn[6002]: [2020-07-27 02:09:26 +0000] [6002] [INFO] Booting worker with pid: 6002
