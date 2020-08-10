@@ -10,7 +10,7 @@ todo_include_todos = True
 
 # -- Project information -----------------------------------------------------
 
-project = 'HAFFA'
+project = 'HAFFA_mgr'
 copyright = '2020, Roie R. Black'
 author = 'Roie R. Black'
 version = '0.0.1'
@@ -23,11 +23,8 @@ release = version
 
 extensions = [
         'nbsphinx',
-        'sphinx.ext.autodoc',
         'sphinx.ext.todo',
-        'sphinx.ext.autosummary',
         'sphinx.ext.extlinks',
-        'sphinx.ext.intersphinx',
         'sphinx.ext.viewcode',
         'sphinx.ext.napoleon',
         'sphinx.ext.coverage',
@@ -43,7 +40,7 @@ master_doc = 'contents'
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '_examples', 'nb']
 
-project = 'HAFFA'
+project = 'HAFFA_mgr'
 copyright = '2020, Roie R. Black and the Sphinx team'
 release = version
 show_authors = True
